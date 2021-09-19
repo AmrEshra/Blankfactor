@@ -26,8 +26,13 @@ public class Bootstrap implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		// Read Data from HTML Page
 		List<CountryReport> countryReportList = extractDataService.readDate();
+		
+		// save Data to Country Report
 		countryReportService.saveCountryReportList(countryReportList);
+		
+		// present data and export csv file
 		exportCountryReport();
 	}
 
@@ -37,7 +42,7 @@ public class Bootstrap implements CommandLineRunner {
 			System.out.format("+--------------------------------------------------------------------------------------------+%n");
 			System.out.format("| Available Regions : Africa, Asia , Australia/Oceania, Europe, North America, South America |%n");
 			System.out.format("+--------------------------------------------------------------------------------------------+%n");
-			System.out.println("Enter Region name (for All Regions user Enter) : ");
+			System.out.print("Enter Region name (for All Regions user Enter) : ");
 			String region = scanner.nextLine();
 			exportDataService.presentCountryReportList(region);
 		}

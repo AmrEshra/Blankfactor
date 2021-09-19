@@ -19,6 +19,10 @@ public class ExportDataService {
 	@Autowired
 	private CountryReportService countryReportService;
 
+	/**
+	 * print Data in Console and export it into csv file
+	 * @param region
+	 */
 	public void presentCountryReportList(String region) {
 
 		List<CountryReport> countryReportList = countryReportService.getCountryReport(region);

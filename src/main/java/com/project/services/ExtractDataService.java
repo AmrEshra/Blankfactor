@@ -16,6 +16,11 @@ import com.project.entity.CountryReport;
 @Service
 public class ExtractDataService {
 
+	/**
+	 * Read Data table from HTML page
+	 * @return
+	 * @throws Exception
+	 */
 	public List<CountryReport> readDate() throws Exception {
 		List<CountryReport> countryReportList = new ArrayList<CountryReport>();
 		try {

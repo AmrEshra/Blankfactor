@@ -17,6 +17,10 @@ public class CountryReportService {
 	@Autowired
 	private CountryReportRepository countryReportRespository;
 	
+	/**
+	 * save all country Report
+	 * @param countryReportList
+	 */
 	public void saveCountryReportList(List<CountryReport> countryReportList) {
 
 		countryReportRespository.saveAll(countryReportList);
@@ -25,6 +29,11 @@ public class CountryReportService {
 		System.out.println(countryReportRespository.count() + " Country loaded for " + dtf.format(now));
 	}
 	
+	/**
+	 * Get Country Report by Region
+	 * @param region
+	 * @return List<CountryReport>
+	 */
 	public List<CountryReport> getCountryReport(String region) {
 		// load all Countries
 		if(region.isEmpty())
