@@ -17,6 +17,9 @@
 - com.opencsv
 
 ## Running the Application
+1 - Reading all country report from HTML page and save it to generated SQLite DB in ```sqliteDatabase.db```
+
+## Running the Application
 Go to the root folder, open the command line, and type here: 
 ```
 clean package -DskipTests=true
