@@ -20,7 +20,7 @@
 1 - Reading all country report from HTML page and save it to generated SQLite DB in ```sqliteDatabase.db```
 
 ## Running the Application
-Go to the root folder, open the command line, and type here: 
+1- Go to the root folder, open the command line, and type here: 
 ```
 clean package -DskipTests=true
 ```
@@ -28,9 +28,9 @@ this command will install all necessary dependencies.
 then depending on the repository location, use this command to run the jar file
 ```java -jar Blanckfactor-0.0.1.jar```
 after that the application is going to run
-1 - Reading all country report from HTML page and save it to generated SQLite DB in ```sqliteDatabase.db```
-2 - You will be asked to Enter Region Name to present it into console (CMD) (eg. Europe)
-3 - The application will presenf the data in formated table  and a message will appears that file ```export_Europe_YY_MM_DD.csv``` is generated successfully
+2 - Reading all country report from HTML page and save it to generated SQLite DB in ```sqliteDatabase.db```
+3 - You will be asked to Enter Region Name to present it into console (CMD) (eg. Europe)
+4 - The application will presenf the data in formated table  and a message will appears that file ```export_Europe_YY_MM_DD.csv``` is generated successfully
 
 ## Additional information
 The server is running on port: 8082
