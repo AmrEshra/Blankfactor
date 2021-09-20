@@ -51,7 +51,7 @@ public class ExportDataService {
 
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("YY_MM_dd");
 		LocalDateTime now = LocalDateTime.now();
-		String fileName = "export_" + region + "_" + dtf.format(now) + ".csv";
+		String fileName = "export_" + region.replace("/", "-") + "_" + dtf.format(now) + ".csv";
 
 		try (CSVWriter writer = new CSVWriter(new FileWriter(fileName))) {
 			writer.writeAll(createCsvData(countryReportList));
